@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="/static/js/jquery-1.8.3.min.js"></script>
+		<script src="/static/js/head_pub.js"></script>
+		<script src="/static/js/scroll.js"></script>
+		<script src="/static/js/jump.js"></script>
+		<link rel="stylesheet" href="/static/css/pub.css" />
+		<link rel="stylesheet" href="/static/css/about.css" />
+		<link rel="stylesheet" href="/static/css/joinus.css" />
+		<style type="text/css">
+			.head{
+				display:none;
+				min-width:1000px;
+				border-bottom:1px solid rgb(195,195,195);
+				position:absolute;
+				top:0;
+				z-index:10;
+				background:white;
+				opacity:1;
+			}
+			.head:after{
+	                clear: both;
+	                content: "";
+	                width: 0;
+	                height: 0;
+	                display: block;
+	                visibility: hidden;
+	        }
+	        .head_logo{
+	        	float:left;
+	        	display:block;
+	        	margin-left:40px;
+	        }
+	        .head_a{        	
+	        	float:right;
+	        	line-height:149px;
+	        	margin-right:50px;
+	        	font-size:18px;
+	        	font-family:Arial;
+	        }
+	        .head_a:hover{color:#9d723d}
+			.nav-title{
+				display:none;
+			}
+        
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<a href="/"><img class="head_logo" src="/static/img/logo_jpg.png" alt="" /></a>
+			<a class="nav_Join head_a" href="/apidoc/joinus.html" style="color:#9d723d">Join us</a>
+			<a class="nav_About head_a" href="/apidoc/about.html">About</a>
+			<a class="nav_Works head_a" href="/apidoc/works.html">Works</a>
+			<a class="nav_Service head_a" href="/apidoc/service.html">Service</a>
+		</div>
+		
+		<img class="index_nav" src="/static/img/phone_index03.jpg" alt="" />
+		<div class="con_parent">
+			<div class="con">
+				<div class="con_top">
+					<div class="move1">
+						<h2 class="scroll">商务合作</h2>
+					</div>
+					<div class="move2">
+						<div class="joinus_img1 scroll"></div>
+					</div>
+					<div class="move3">
+						<p class="scroll">经过十年的不断发展，广告有限公司客户构成逐步形成以金融行业为主到覆盖全行业客户服务，期待与更多优质企业跨界合作。我们将通过专业服务为您的企业提供更有效的品牌营销方案，帮助您的企业提升价值。</p>
+					</div>
+					<div class="move4">
+						<h2 class="scroll">代理合作</h2>
+					</div>	
+					<div class="move5">
+						<div class="joinus_img2 scroll"></div>
+					</div>
+					<div class="move6">
+						<p class="scroll">因公司业务规模不断发展扩大，我们期待与广告代理伙伴、互联网渠道代理伙伴、互联网技术开发伙伴等各类优质的伙伴形成紧密合作，共同提升核心竞争力，并以专业的能力及态度共同为客户创造更多价值。</p>
+					</div>
+					<div class="move7">
+						<h2 class="scroll">加入团队</h2>
+					</div>
+					<div class="move8">
+						<div class="joinus_img3 scroll"></div>
+					</div>
+					<div class="move9">
+						<p class="scroll">我们是一帮有理想、有态度、有追求的年轻人，核心成员均有4A广告公司背景，从事广告行业十几年。互联网营销团队成员来自于大型互联网公司，操盘过大型线上线下互联网营销案例，有丰富的品牌营销、互联网营销经验。欢迎同样有追求的小伙伴加入我们，一起为这个行业做出贡献，成就我们的精彩。</p>
+					</div>
+				</div>
+				
+				<!--foot-->
+				<div class="foot">
+					<ul class="ourservice">
+						<li class="li_first">我们的服务</li>
+						<li class="li"><a href="">品牌创意</a></li>
+						<li class="li"><a href="">数字营销</a></li>
+						<li class="li"><a href="">活动公关</a></li>
+						<li class="li"><a href="">创新文创</a></li>
+					</ul>
+					<ul class="ourworks">
+						<li class="li_first">我们的作品</li>
+						<li><a href="">品牌创意</a></li>
+						<li><a href="">数字营销</a></li>
+						<li><a href="">活动公关</a></li>
+						<li><a href="">创新文创</a></li>
+					</ul>
+					<ul class="aboutus">
+						<li class="li_first">关于我们</li>
+						<li><a href="">公司简介</a></li>
+						<li><a href="">公司理念</a></li>
+						<li><a href="">挂牌四板</a></li>
+						<li><a href="">服务客户</a></li>
+					</ul>
+					<ul class="joinus">
+						<li class="li_first">加入我们</li>
+						<li><a href="">商务合作</a></li>
+						<li><a href="">代理合作</a></li>
+						<li><a href="">加入团队</a></li>
+					</ul>
+					<h6></h6>
+					
+				</div>
+			</div>
+			
+			
+		</div>
+	</body>
+	<script>
+		$(function(){
+//			alert(0);
+			function getScrollbarWidth() {
+				
+			    var odiv = document.createElement('div'),//创建一个div
+			        styles = {
+			            width: '100px',
+			            height: '100px',
+			            overflowY: 'scroll'//让他有滚动条
+			        }, i, scrollbarWidth;
+			    for (i in styles) odiv.style[i] = styles[i];
+			    document.body.appendChild(odiv);//把div添加到body中
+			    scrollbarWidth = odiv.offsetWidth - odiv.clientWidth;//相减
+			    
+			    odiv.remove();//移除创建的div
+			    
+			    return scrollbarWidth;//返回滚动条宽度
+			    
+			}
+			var windowW=$(window).width();
+			var scrollW=getScrollbarWidth();
+			$(".head").css("display","block");
+			$(".head").width(windowW-scrollW);
+			
+		})
+	</script>
+</html>
+

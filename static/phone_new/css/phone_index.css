@@ -1,0 +1,24 @@
+html,body{
+	height:100%;
+}
+.Banner{
+	position:relative;
+	height:100%;
+	overflow:hidden;
+	width:100%;
+}
+.ban{
+	height:100%;
+	margin:0;
+	padding:0;
+	float:left;
+}
+.swiper-slide a{
+	display:block;
+	width:100%;
+	height:100%;
+	
+}
+.swiper-slide a img{
+	opacity:0;	
+}

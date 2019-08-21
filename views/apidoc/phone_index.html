@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title></title>
+		<script src="/static/phone_new/js/jquery-1.8.3.min.js"></script>
+		<script src="/static/phone_new/js/index_rem.js"></script>
+		<script src="/static/phone_new/js/swiper-3.3.1.min.js"></script>
+		<script src="/static/phone_new/js/index_banner.js"></script>
+		<link rel="stylesheet" href="/static/phone_new/css/pub.css" />
+		<link rel="stylesheet" href="/static/phone_new/css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="/static/phone_new/css/phone_index.css" />
+		<link rel="stylesheet" href="/static/phone_new/css/phone_donghua.css" />
+		<style type="text/css">
+			.head{
+				width:100%;
+				position:absolute;
+				z-index:10;
+				height:2rem;
+				text-align:right;
+				line-height:2rem;
+				transition:all 0.8s ease-in-out;
+				-moz-transition:all 0.8s ease-in-out;
+				-webkit-transition:all 0.8s ease-in-out;
+				-o-transition:all 0.8s ease-in-out;
+			}
+			.head_dong{
+				position:absolute;
+				width:100%;
+				height:100%;
+				opacity:1;
+				background: linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 70%);
+				background: -webkit-linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 70%);
+				background: -moz-linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 70%);
+				background: -o-linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 70%);
+			}
+			.head:after{
+	                clear: both;
+	                content: "";
+	                width: 0;
+	                height: 0;
+	                display: block;
+	                visibility: hidden;
+	        }
+	        .head_logo{
+	        	display:block;
+	        	left:.4rem;
+	        	width:2.9rem;
+	        	height:2rem;
+	        	position:absolute;
+	        	z-index:3;
+	        }
+	       	.xiala{
+	       		/*float: right;*/
+	       		width:24px;
+	       		height:24px;
+	       		top:50%;
+	       		right:.66rem;
+	       		margin-top:-12px;
+	       		background:url(/static/phone_new/img/phone_index2.png) no-repeat;
+	       		background-size:24px 24px;
+	       		display:inline-block;
+				transition:all 1s ease-in-out;
+				-moz-transition:all 1s ease-in-out;
+				-webkit-transition:all 1s ease-in-out;
+				-o-transition:all 1s ease-in-out;
+				position:absolute;
+				z-index:3;
+	       	}
+        
+	       	.xiala_a{
+	       		width:100%;
+	       		position:absolute;
+	       		top:2.82rem;
+				height:0;
+				overflow:hidden;
+	       	}
+	       	.xiala_a a{
+	       		float:right;
+	       		display:inline-block;
+	       		text-align: right;
+	       		width:100%;
+	       		line-height:1.3rem;
+	       		font-size:.5rem;
+	       		color:#fafafa;
+	       	}
+	       	
+	       	
+		</style>
+	</head>
+	<body>
+		<!--head-->
+		
+		<div class="head">
+			<div class="head_dong"></div>
+			<a href="" class="index">
+				<img class="head_logo" src="/static/phone_new/img/phone_index1.png" alt="" />
+			</a>
+			<div class="xiala"></div>
+			<div class="fengexian"></div>
+			<div class="xiala_a">
+				<a class="nav_Service head_a" href="/apidoc/service.html">Service</a>		
+				<a class="nav_Works head_a" href="/apidoc/works.html">Works</a>
+				<a class="nav_About head_a" href="/apidoc/about.html">About</a>
+				<a class="nav_Join head_a" href="/apidoc/joinus.html">Join us</a>
+			</div>
+		</div>
+		<div class="head_replaceF">
+			<div class="head_replace"></div>
+		</div>
+		<div class="preimg" style="width:100%;height:100%;position:absolute;z-index:9;"> <img src="" alt="" /></div>
+		<!--轮播图-->
+		<div class="swiper-container Banner" >
+			<div class="swiper-wrapper ban" >
+				{{range $k, $v := .list}}
+
+				<div class="swiper-slide"><a href="{{.urlPath}}" ><img src="{{.content}}" alt="" /></a></div>
+
+				{{end}}	
+			    <!-- <div class="swiper-slide"><a href=""><img src="/static/phone_new/img/phone_index01.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="/static/phone_new/img/phone_index02.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="/static/phone_new/img/phone_index03.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="/static/phone_new/img/phone_index04.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="/static/phone_new/img/phone_index05.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="/static/phone_new/img/phone_index06.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="/static/phone_new/img/phone_index07.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="/static/phone_new/img/phone_index08.jpg" alt="" /></a></div> -->
+
+
+                                           </div>
+		  	<div class="swiper-pagination"></div>
+		</div>
+	</body>
+</html>

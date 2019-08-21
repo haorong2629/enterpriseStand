@@ -1,0 +1,219 @@
+﻿button{
+	border:none;
+	cursor:pointer;
+}
+.con .con_top{
+	padding-top:10px;
+	padding-bottom:118px;
+	font-size:0px;
+}
+.div_title{
+	height:120px;
+	padding:90px 0 40px 0;
+}
+.div_title h2,.div_title h3{
+	line-height:120px;
+	font-size:30px;
+	color:#323232;
+	display: inline;
+	vertical-align: bottom;
+}
+.div_title h2{
+	padding:0 38px 0 338px;
+}
+.div_title h3{
+	padding-left:38px;
+}
+.div_title img{
+	width:120px;
+	height:120px;
+}
+.service_img1{
+	display: inline-block;
+	width:280px;
+	height:160px;
+	margin:20px 0 0 10px;
+	cursor:pointer;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+.service_img2{
+	display: inline-block;
+	width:280px;
+	height:160px;
+	margin-left:10px;
+	cursor:pointer;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+.service_img3{
+	display: inline-block;
+	width:280px;
+	height:160px;
+	margin-left:10px;
+	cursor:pointer;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+}
+.pinpai img:hover,.shuzi img:hover,.huodong img:hover,.chuangxin img:hover{
+	transform:scale(1.05);
+	-ms-transform:scale(1.05); 	/* IE 9 */
+	-moz-transform:scale(1.05); 	/* Firefox */
+	-webkit-transform:scale(1.05); /* Safari 和 Chrome */
+	-o-transform:scale(1.05);
+}
+
+.pinpai,.shuzi,.huodong,.chuangxin{
+	margin-left:62px;
+	height:160px;
+	overflow:hidden;
+}
+
+/*蒙版*/
+.meng{
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:100;
+	background:url(../img/bg.png) no-repeat 100% 100%;
+	background-size: 100% 100%;
+	top:0;
+	left:0;
+	display:none;
+}
+.meng_con{
+	position:absolute;
+	width:800px;
+	height:914px;
+	left:50%;
+	top:50%;
+	margin-left:-400px;
+	margin-top:-457px;
+}
+.img_div{
+	width:800px;
+	height:800px;
+	background:white;
+	
+	
+}
+.img_div img{
+}
+.smallimg{
+	width:100%;
+	height:100px;
+	margin-top:13px;
+	overflow:hidden;
+}
+.smallimg div{
+	width:100px;
+	height:100px;
+	float:left;
+	margin-right:14px;
+	opacity: 0.5;
+	overflow:hidden;
+}
+.smallimg img{
+	height:100px;
+	margin-left:-50%;
+}
+.meng_left{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-596px;
+	margin-top:-140px;
+	width:41px;
+	height:80px;
+	background: url(../img/work_left.png) no-repeat 100% 100%;
+	opacity:0.3;
+}
+.meng_right{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:556px;
+	margin-top:-140px;
+	width:41px;
+	height:80px;
+	background: url(../img/work_right.png)  no-repeat 100% 100%;
+	opacity:0.3;
+}
+.meng_right:hover,.meng_left:hover{
+	opacity:0.9;
+}
+.shutdown{
+	position: absolute;
+	left:50%;
+	top:50px;
+	margin-left:500px;
+	width:56px;
+	height:56px;
+	background: url(../img/work_shutdown.png) no-repeat;
+	background-size:56px 56px;
+}
+.xuanzhong {
+	opacity: 1;
+}
+			.scroll{
+        		opacity:0;
+        		position:absolute;
+        		top:200px;
+        	}
+        	.move1{
+        		height:250px;
+        		position:relative;
+        	}
+        	.move2{
+        		height:80px;
+        		position:relative;
+        	}
+        	.move3{
+        		height:160px;
+        		position:relative;
+        	}
+        	.move4{
+        		height:250px;
+        		position:relative;
+        	}
+        	.move5{
+        		height:120px;
+        		position:relative;
+        	}
+        	.move6{
+        		height:160px;
+        		position:relative;
+        	}
+        	.move7{
+        		height:250px;
+        		position:relative;
+        	}
+        	.move8{
+        		height:80px;
+        		position:relative;
+        	}
+        	.move9{
+        		height:160px;
+        		position:relative;
+        	}
+        	.move10{
+        		height:250px;
+        		position:relative;
+        	}
+        	.move11{
+        		height:120px;
+        		position:relative;
+        	}
+        	.move12{
+        		height:160px;
+        		position:relative;
+        	}

@@ -1,0 +1,367 @@
+﻿img{
+	display:block;
+}
+::-webkit-scrollbar {display:none}
+.index_nav{
+	display:block;
+	width:100%;
+	height:100%;
+}
+.con_parent{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	overflow-y:scroll;
+	/*box-shadow: 0rem 0rem .2rem rgb(232,232,232);*/
+}
+.con{
+	width:10rem;
+	background:white;
+	margin:5.77rem 0 0rem .4rem;
+}
+.con_top{
+	padding-bottom:.86rem;
+	box-shadow: 0rem 0rem .2rem rgb(232,232,232);
+	background:rgb(250,250,250);
+}
+.con_img1{
+	width: 8.6rem;
+	height:2.42rem;
+	padding:1.02rem 0 .72rem 0;
+	background:url(../img/logo.gif) no-repeat center;
+	background-size:4.52rem 2.42rem;
+}
+.con_img2{
+	width:8.6rem;
+	height:1.26rem;
+	padding:.76rem 0 .6rem 0;
+	background:url(../img/idea.gif) no-repeat center;
+	background-size:5.79rem 1.26rem;
+}
+p{
+	width:8.60rem;
+	margin:0 .70rem;
+	font-size:.37rem;
+	color:#323232;
+	line-height:.63rem;
+	font-family:'思源黑体 CN';
+	font-weight:lighter;
+}
+.index_p1{
+	padding-bottom:.20rem;
+}
+#index_p2,#index_p3,#index_p4,#index_p5{
+	font-size:.52rem;
+	font-weight:normal;
+	line-height:.5rem;
+	text-align: center;
+	margin-top:.85rem;
+	color:black;
+}
+.bank_img{
+	width:8.66rem;
+	height: 3.81rem;
+	margin:.69rem 0 .56rem .67rem;
+	position:relative;
+}
+.bank_img li{
+	width:2.11rem;
+	height:1.91rem;
+	transition: All 0.15s;
+    -webkit-transition: All 0.15s;
+    -moz-transition: All 0.15s;
+     -o-transition: All 0.15s;
+}
+.bank_img li:hover{
+	z-index:3;
+	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+.bank_img>li:nth-child(1){
+	position:absolute;
+	z-index: 1;
+	background:url(../img/bank1.png) no-repeat;
+	background-size:100% 100%; 
+}
+.bank_img>li:nth-child(2){
+	position:absolute;
+	left:3.27rem;
+	z-index: 1;
+	background:url(../img/bank2.png) no-repeat;
+	background-size:100% 100%; 
+}
+.bank_img>li:nth-child(3){
+	position:absolute;
+	left:6.54rem;
+	z-index: 1;
+	background:url(../img/bank3.png) no-repeat;
+	background-size:100% 100%; 
+}
+.bank_img>li:nth-child(4){
+	position:absolute;
+	left:1.63rem;
+	top:.95rem;
+	z-index: 2;
+	background:url(../img/bank4.png) no-repeat;
+	background-size:100% 100%; 
+}
+.bank_img>li:nth-child(5){
+	position:absolute;
+	left:4.90rem;
+	top:.95rem;
+	z-index: 2;
+	background:url(../img/bank5.png) no-repeat;
+	background-size:100% 100%; 
+}
+.bank_img>li:nth-child(6){
+	position:absolute;
+	top:1.91rem;
+	z-index: 1;
+	background:url(../img/bank6.png) no-repeat;
+	background-size:100% 100%; 
+}
+.bank_img>li:nth-child(7){
+	position:absolute;
+	left:3.27rem;
+	top:1.91rem;
+	z-index: 1;
+	background:url(../img/bank7.png) no-repeat;
+	background-size:100% 100%; 
+}
+.bank_img>li:nth-child(8){
+	position:absolute;
+	left:6.54rem;
+	top:1.91rem;
+	z-index: 1;
+	background:url(../img/bank8.png) no-repeat;
+	background-size:100% 100%; 
+}
+
+
+
+
+
+.con_zi{
+	background:url(../img/about_phone.png) no-repeat 1.80rem .72rem;
+	background-size:3.25rem 4.11rem;
+}
+.con_zi_img{
+	margin:1.07rem 0 0 5.42rem;
+	width:2.80rem;
+	height:2.80rem;
+	float:left;
+}
+.zi_img{
+	width:.85rem;
+	height:.85rem;
+	float:left;
+	margin:.4rem 0 .57rem .68rem;
+}
+.con_zi p{
+	float:left;
+	width:2.74rem;
+	text-align:center;
+	line-height:.34rem;
+	font-size:.34rem;
+	color:black;
+	margin-left:5.48rem;
+	margin-top:.14rem;
+}
+#con_zi_img{
+	background:url(../img/about_zi.png) no-repeat .70rem .40rem;
+	background-size:8.62rem .54rem;
+	height:1.53rem;
+	display: block;
+}
+.con_img{
+	width:8.60rem;
+	height:3.62rem;
+	margin:.70rem .70rem .23rem .70rem;
+}
+.con_i{
+	display: block;
+	font-size:.47rem;
+	font-weight: lighter;
+	color:#c8c8c8;
+	margin-top:.62rem;
+	text-align: center;	
+}
+.con_inputdiv{
+	margin-top:.33rem;
+}
+.con_input,.con_textare{
+	float:left;
+	width:8.58rem;
+	height:.68rem;
+	margin-right:.18rem;
+	border:1px solid #b8b8b8;
+	border-radius: .16rem;
+	-moz-border-radius: .16rem;
+	-webkit-border-radius: .16rem;
+	-mz-border-radius: .16rem;
+	color:#323232;
+	font-size:.32rem;
+	margin-left:.7rem;
+	margin-top:.18rem;
+	background:rgb(250,250,250);
+	line-height:.56rem;
+	text-indent:.3rem;
+}
+.con_textare{
+	height:1.80rem;
+	margin-right:.70rem;
+	padding-top:.18rem;
+	line-height:.26rem;
+	overflow-y: hidden;
+}
+::-webkit-input-placeholder{
+	color:#c8c8c8;
+	font-size:.22rem;
+	font-weight: 400;
+}
+:-moz-placeholder{
+	color:#c8c8c8;
+	font-size:.22rem;
+	font-weight: 400;
+}
+::-moz-placeholder{
+	color:#c8c8c8;
+	font-size:.22rem;
+	font-weight: lighter;
+}
+:-ms-input-placeholder{
+	color:#c8c8c8;
+	font-size:.22rem;
+	font-weight: 400;
+}
+h6{
+	clear: both;
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+.con_input::-webkit-input-placeholder{
+font-size:.22rem;
+        color: #c8c8c8;
+		line-height:.53rem;
+		padding-left:.20rem;
+}
+
+.con_input::-moz-placeholder{  //不知道为何火狐的placeholder的颜色是粉红色，怎么改都不行，希望有大牛路过帮忙指点
+	font-size:.22rem;
+    color: #c8c8c8;
+	line-height:.53rem;
+	padding-left:.20rem;
+}
+
+.con_input::-ms-input-placeholder{  //由于我的IE刚好是IE9，支持不了placeholder，所以也测试不了(⊙﹏⊙)，有IE10以上的娃可以帮我试试
+	font-size:.22rem;
+    color: #c8c8c8;
+	line-height:.53rem;
+	padding-left:.20rem;
+}
+.con h1{
+	width:2.00rem;
+	height:.50rem;
+	margin:.47rem 4.00rem 0rem 4.00rem;
+	background:rgb(199,0,10);
+	color:white;
+	line-height:.50rem;
+	font-size:.32rem;
+	text-align: center;
+	border-radius:.25rem; ;
+	-moz-border-radius:.25rem;
+	-webkit-border-radius-:.25rem;
+	-ms-border-radius:.25rem;
+}
+
+.foot ul li a{
+	font-family:'思源黑体 CN';
+	font-weight:lighter;
+	font-size:.37rem;
+	color:#969696;
+}
+.foot{
+	width:9.58rem;
+	padding:0.06rem .21rem 1.28rem;
+	margin:.18rem 0 .2rem .4rem;
+	float:left;
+	box-shadow: 0rem 0rem .20rem rgb(232,232,232);
+	background:rgb(250,250,250);
+}
+.foot ul{
+	float:left;
+	overflow:hidden;
+	width:9.28rem;
+	margin:0 .15rem;
+	padding:0.1rem 0;
+	border-bottom:1px solid #b6b6b6;
+	max-height:1rem;
+}
+.foot_ul{
+	transform:rotate(90deg) ;
+	transition:all linear 0.5s;
+}
+.li,.li a{
+	font-size:.37rem;
+	color:#646464;
+	line-height:1rem;
+	font-weight:lighter;
+}
+.foot ul li{
+	font-weight:normal;
+}
+.foot ul li img{
+	float:right;
+	width:.26rem;
+	height:.4rem;
+	margin:.3rem .2rem;;
+}
+.ourservice{
+	width:2.70rem;
+}
+.ourworks{
+	width:2.80rem;
+}
+.aboutus{
+	width:2.66rem;
+}
+.joinus{
+	width:.72rem;
+}
+.li_first{
+	font-size:.37rem;
+	color:#323232;
+	line-height:.40rem;
+}
+
+.li{
+	padding-left:.5rem;
+	opacity:0;
+	transition:all 1s linear 1s;
+	-moz-transition:all 1s linear 1s; /* Firefox 4 */
+	-webkit-transition:all 1s linear 1s; 
+}
+.li_first{
+	line-height:1rem;
+}
+.foot ul{
+	transition:all 1s;
+	-moz-transition:all 1s; /* Firefox 4 */
+	-webkit-transition:all 1s;
+}
+
+.a{
+	padding-left:0rem;
+	opacity:1;
+}
+.b{
+	padding-left:.5rem;
+	opacity:0;
+}

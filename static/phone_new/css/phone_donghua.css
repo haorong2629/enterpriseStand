@@ -1,0 +1,80 @@
+.head_replaceF {
+	position: absolute;
+	width: 100%;
+	height:100%;
+	background: none;
+	z-index:-1;
+}
+.head_replace{
+	width:100%;
+	height:100%;
+	background:none;
+}
+
+.head_dong1 {
+	transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	background: black;
+}
+
+.head_dong2 {
+	transition: all 0.8s ease-in-out 0.8s;
+	-moz-transition: all 0.8s ease-in-out 0.8s;
+	-webkit-transition: all 0.8s ease-in-out 0.8s;
+	-o-transition: all 0.8s ease-in-out 0.8s;
+	background: none;
+}
+
+.head_dong3 {
+	transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	background: black;
+}
+.head_dong4{
+	transition: all 0.8s ease-in-out 0.8s;
+	-moz-transition: all 0.8s ease-in-out 0.8s;
+	-webkit-transition: all 0.8s ease-in-out 0.8s;
+	-o-transition: all 0.8s ease-in-out 0.8s;
+	background: white;
+}
+.head_dong5 {
+	transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	opacity:0;
+}
+.head_dong6{
+	transition: all 0.8s ease-in-out;
+	-moz-transition: all 0.8s ease-in-out;
+	-webkit-transition: all 0.8s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	opacity:1;
+}
+.swiper-pagination-bullet{
+	       		transition:all 0.8s ease-in-out,
+					-moz-transition:all 0.8s ease-in-out;
+					-webkit-transition:all 0.8s ease-in-out;
+					-o-transition":all 0.8s ease-in-out;
+					
+	       	}
+	       	.swiper-slide{
+	       		overflow:hidden;
+	       	}
+	       	.fengexian{
+	       		height:1px;
+	       		width:100%;
+	       		position:absolute;
+	       		top:2rem;
+	       		background:rgb(195,195,195);
+	       		opacity:0;
+	       		z-index:3;
+	       		transition:all 0.8s ease-in-out;
+				-moz-transition:all 0.8s ease-in-out;
+				-webkit-transition:all 0.8s ease-in-out;
+				-o-transition:all 0.8s ease-in-out;
+	       	}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="/static/js/jquery-1.8.3.min.js"></script>
+		<script src="/static/js/zy.media.min.js"></script>
+		<script src="/static/js/jump.js"></script>
+		<link rel="stylesheet" href="/static/css/pub.css" />
+		<link rel="stylesheet" href="/static/css/about.css" />
+		<link rel="stylesheet" href="/static/css/work.css" />
+		<link rel="stylesheet" href="/static/css/zy.media.min.css" />
+		<style type="text/css">
+			body{
+				overflow-y:scroll;
+			}
+			.head {
+				width: 100%;
+				min-width: 1000px;
+				border-bottom: 1px solid rgb(195, 195, 195);
+			}
+			
+			.head:after {
+				clear: both;
+				content: "";
+				width: 0;
+				height: 0;
+				display: block;
+				visibility: hidden;
+			}
+			
+			.head_logo {
+				float: left;
+				display: block;
+				margin-left: 40px;
+			}
+			
+			.head_a {
+				float: right;
+				line-height: 149px;
+				margin-right: 50px;
+				font-size: 18px;
+				font-family: Arial;
+				color: #282828;
+			}
+			
+			.head_a:hover {
+				color: #9d723d
+			}
+			
+			.nav-title {
+				display: none;
+			}
+			.foot{
+				min-width: 1080px;
+			}
+			.foot ul{
+        		margin-top:200px;
+        		opacity:0;
+        		width:18%;
+        		padding-left:7%;
+        	}
+		</style>
+		<script src="/static/js/work.js"></script>
+	</head>
+
+	<body>
+		<!--蒙版-->
+		<div class="meng" style="width:100%;">
+			<button class="meng_left"></button>
+			<button class="meng_right"></button>
+			<button class="shutdown"></button>
+			<div class="meng_con">
+				<div class="img_div">
+					<img src="" alt="" />
+				</div>
+
+				<div class="smallimg">
+					<!--<img class="xuanzhong" src="" alt="" />
+					<img src="" alt="" />
+					<img src="" alt="" />-->
+				</div>
+			</div>
+		</div>
+
+		<div class="head">
+			<a href="/"><img class="head_logo" src="/static/img/logo_jpg.png" alt="" /></a>
+			<a class="nav_Join head_a" href="/apidoc/joinus.html">Join us</a>
+			<a class="nav_About head_a" href="/apidoc/about.html">About</a>
+			<a class="nav_Works head_a" href="/apidoc/works.html" style="color:#9d723d">Works</a>
+			<a class="nav_Service head_a" href="/apidoc/service.html">Service</a>
+		</div>
+		<div class="work_nav">
+			<i>Bc</i>
+			<i>Pr</i>
+			<i>Dm</i>
+			<i>Inno</i>
+			<i style="padding-right:0;">Video</i>..............
+			<i style="font-weight:normal">All</i>
+		</div>
+		
+		<!--img-->
+		<!--<ul class="work_img">
+
+			{{range $k, $v := .list}}
+
+			<li class="work_liR"><img src="{{.content}}" alt="" /></li>
+
+			{{end}}
+
+		</ul>-->
+		
+		<!--改动:上边注释的ul标签换成下边的div-->
+		<div class="imgTab">
+				<ul class="work_img">
+					<!-- <li class="work_liL"><img src="/static/img/work_img1.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/2.jpg" alt="" /></li>
+					<li class="work_liL"><img src="/static/img/work_img3.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/bank4.png" alt="" /></li>
+					<li class="work_liL"><img src="/static/img/work_img5.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/work_img6.jpg" alt="" /></li>  -->
+					<!-- {{range $k, $v := .ppcy}}
+						<li class="work_liL"><img class="img" src="{{.content}}" alt="" /></li>
+					{{end}}-->
+				</ul>
+				<ul class="work_img">
+					
+					<!-- <li class="work_liR"><img src="/static/img/bank4.png" alt="" /></li>
+					<li class="work_liL"><img src="/static/img/work_img5.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/work_img6.jpg" alt="" /></li> 
+					<li class="work_liL"><img src="/static/img/work_img1.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/2.jpg" alt="" /></li>
+					<li class="work_liL"><img src="/static/img/work_img3.jpg" alt="" /></li> -->
+					<!-- {{range $k, $v := .szyx}}
+						<li class="work_liL"><img class="img" src="{{.content}}" alt="" /></li>
+					{{end}}-->
+				</ul>
+				<ul class="work_img">
+					<!-- <li class="work_liL"><img src="/static/img/work_img1.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/2.jpg" alt="" /></li>
+					<li class="work_liL"><img src="/static/img/work_img3.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/bank4.png" alt="" /></li>
+					<li class="work_liL"><img src="/static/img/work_img5.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/work_img6.jpg" alt="" /></li>  -->
+					<!-- {{range $k, $v := .hdgg}}
+					<li class="work_liL"><img class="img" src="{{.content}}" alt="" /></li>
+					{{end}}-->
+				</ul>
+				<ul class="work_img">
+					<!-- <li class="work_liL"><img src="/static/img/work_img1.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/2.jpg" alt="" /></li>
+					<li class="work_liL"><img src="/static/img/work_img3.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/bank4.png" alt="" /></li>
+					<li class="work_liL"><img src="/static/img/work_img5.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/work_img6.jpg" alt="" /></li>  -->
+					<!--{{range $k, $v := .cxwc}}
+						<li class="work_liL"><img class="img" src="{{.content}}" alt="" /></li>
+					{{end}}-->
+				</ul>
+				
+				<ul class="work_video">
+					<!--{{range $k, $v := .ppsp}}
+					<li class="work_li">
+						<div>
+							<video class="img" preload="auto" poster="{{.content}}" x-webkit-airplay="false" webkit-playsinline="false" playsinline="false" x5-video-player-type="h5" controls="controls">
+								<source src="{{.videopath}}" type='video/mp4' ></source>
+								<source src="{{.videopath}}" type='video/webm' ></source>
+								<source src="{{.videopath}}" type='video/ogg' ></source>
+							</video>
+						</div>
+					</li>
+					{{end}}-->
+					<!-- <li class="work_li">
+						<div>
+							<video class="img" preload="auto" poster="/static/img/m.png" x-webkit-airplay="false" webkit-playsinline="false" playsinline="false" x5-video-player-type="h5" controls="controls">
+								<source src="/static/img/mp4.mp4" type='video/mp4' ></source>
+								<source src="/static/img/webm.webm" type='video/webm' ></source>
+								<source src="/static/img/ogg.Ogg" type='video/ogg' ></source>
+							</video>
+						</div>
+					</li>
+					<li class="work_li">
+						<div>
+							<video class="img" preload="auto" poster="/static/img/m.png" x-webkit-airplay="false" webkit-playsinline="false" playsinline="false" x5-video-player-type="h5" controls="controls">
+								<source src="/static/img/mp4.mp4" type='video/mp4' ></source>
+								<source src="/static/img/webm.webm" type='video/webm' ></source>
+								<source src="/static/img/ogg.Ogg" type='video/ogg' ></source>
+							</video>
+						</div>
+					</li>
+					<li class="work_li">
+						<div>
+							<video class="img" preload="auto" poster="/static/img/m.png" x-webkit-airplay="false" webkit-playsinline="false" playsinline="false" x5-video-player-type="h5" controls="controls">
+								<source src="/static/img/mp4.mp4" type='video/mp4' ></source>
+								<source src="/static/img/webm.webm" type='video/webm' ></source>
+								<source src="/static/img/ogg.Ogg" type='video/ogg' ></source>
+							</video>
+						</div>
+					</li>
+					<li class="work_li">
+						<div>
+							<video class="img" preload="auto" poster="/static/img/m.png" x-webkit-airplay="false" webkit-playsinline="false" playsinline="false" x5-video-player-type="h5" controls="controls">
+								<source src="/static/img/mp4.mp4" type="video/mp4"></source>
+								<source src="/static/img/webm.webm" type="video/webm"></source>
+								<source src="/static/img/ogg.Ogg" type="video/ogg"></source>
+								
+							</video>
+						</div>
+					</li> -->
+				</ul>
+				<ul class="work_img ">
+					<!-- <li class="work_liL"><img src="/static/img/work_img1.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/2.jpg" alt="" /></li>
+					<li class="work_liL"><img src="/static/img/work_img3.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/bank4.png" alt="" /></li>
+					<li class="work_liL"><img src="/static/img/work_img5.jpg" alt="" /></li>
+					<li class="work_liR"><img src="/static/img/work_img6.jpg" alt="" /></li>  -->
+
+					<!--{{range $k, $v := .ppcy}}
+						<li class="work_liL"><img class="img" src="{{.content}}" alt="" /></li>
+					{{end}}
+					
+					{{range $k, $v := .szyx}}
+						<li class="work_liL"><img class="img" src="{{.content}}" alt="" /></li>
+					{{end}}
+					
+					{{range $k, $v := .hdgg}}
+						<li class="work_liL"><img class="img" src="{{.content}}" alt="" /></li>
+					{{end}}
+					
+					{{range $k, $v := .cxwc}}
+						<li class="work_liL"><img class="img" src="{{.content}}" alt="" /></li>
+					{{end}}
+<!-- 					
+					{{range $k, $v := .ppsp}}
+					<li class="work_li">
+						<div>
+							<video class="img" preload="auto" poster="{{.content}}" x-webkit-airplay="false" webkit-playsinline="false" playsinline="false" x5-video-player-type="h5" controls="controls">
+								<source src="{{.videopath}}" type='video/mp4' ></source>
+								<source src="{{.videopath}}" type='video/webm' ></source>
+								<source src="{{.videopath}}" type='video/ogg' ></source>
+							</video>
+						</div>
+					</li>
+					{{end}} -->
+				</ul>
+			</div>
+		<!--foot-->
+		<div class="foot">
+			<ul class="ourservice">
+				<li class="li_first">我们的服务</li>
+				<li>
+					<a href="">品牌创意</a>
+				</li>
+				<li>
+					<a href="">数字营销</a>
+				</li>
+				<li>
+					<a href="">活动公关</a>
+				</li>
+				<li>
+					<a href="">创新文创</a>
+				</li>
+			</ul>
+			<ul class="ourworks">
+				<li class="li_first">我们的作品</li>
+				<li>
+					<a href="">品牌创意</a>
+				</li>
+				<li>
+					<a href="">数字营销</a>
+				</li>
+				<li>
+					<a href="">活动公关</a>
+				</li>
+				<li>
+					<a href="">创新文创</a>
+				</li>
+			</ul>
+			<ul class="aboutus">
+				<li class="li_first">关于我们</li>
+				<li>
+					<a href="">公司简介</a>
+				</li>
+				<li>
+					<a href="">公司理念</a>
+				</li>
+				<li>
+					<a href="">挂牌四板</a>
+				</li>
+				<li>
+					<a href="">服务客户</a>
+				</li>
+			</ul>
+			<ul class="joinus">
+				<li class="li_first">加入我们</li>
+				<li>
+					<a href="">商务合作</a>
+				</li>
+				<li>
+					<a href="">代理合作</a>
+				</li>
+				<li>
+					<a href="">加入团队</a>
+				</li>
+			</ul>
+			<h6></h6>
+		</div>
+	
+	</body>
+	
+
+</html>

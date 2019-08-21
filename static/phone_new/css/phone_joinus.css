@@ -1,0 +1,36 @@
+﻿.con_top{
+	padding-top:0.09rem;
+}
+.con_top h2{
+	font-size:0.52rem;
+	color:black;
+	font-family:'思源黑体 CN';
+	text-align: center;
+	line-height:.52rem;
+	padding:.75rem .7rem .72rem;
+}
+.con .con_top{
+	padding-bottom:1rem;
+}
+.joinus_img1{
+	height:3.92rem;
+	background:url(../img/joinus1.png) no-repeat 2.72rem 0;
+	background-size:4.56rem 3.43rem;
+}
+.joinus_img2{
+	height:3.35rem;
+	background:url(../img/joinus2.png) no-repeat 2.04rem 0rem;
+	background-size:5.93rem 2.73rem;
+}
+.joinus_img3{
+	height:3.6rem;
+	background:url(../img/joinus3.png) no-repeat 2.36rem 0;
+	background-size:5.32rem 3.03rem;
+}
+/*.con{
+	top:-14.6rem;
+	padding-bottom:.74rem;
+}*/
+.foot{
+	margin-top:.36rem;
+}

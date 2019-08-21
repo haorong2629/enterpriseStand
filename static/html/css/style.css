@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/*scl首页样式修改*/
+
+.navbar-default {
+	background: 0;
+	opacity: .8;
+	box-shadow: inset 0 0px 0 rgba(255, 255, 255, .15), 0 0px 0px rgba(0, 0, 0, .075);
+	border: 0;
+}
+
+.scl_active a {
+	background-image: 0;
+	box-shadow: 0;
+	color: #a07747;
+}
+
+.scl_nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+	color: #000;
+}
+
+.carousel-indicators li {
+	width: 20px;
+	height: 20px;
+	text-indent: 0;
+	color: #584f46;
+	background: #a99d93;
+	border: #a99d93;
+}
+
+.carousel-indicators .active {
+	width: 20px;
+	height: 20px;
+	text-indent: 0;
+	color: #841b20;
+}
+
+.scl_cen {
+	width: 100vw;
+	height: 100vh
+}
+
+.scl_cen img {
+	width: 100vw;
+	height: 100vh;
+}
+
+
+/*scl About页面样式调整*/
+/*
+.scl_three {
+	position: absolute;
+	margin: auto;
+	top: 50%;
+	right: 2%;
+	width: 44px;
+	height: 34px;
+	margin-top: -17px;
+}*/
+
+.scl_logo a {
+	display: block;
+}
+
+.scl_logo>a>img {
+	max-width: 100%;
+	float: left;
+	display: block;
+}
+/*
+.navbar-toggle {
+	margin: 0;
+}
+*/
+/*
+.navbar-brand {
+	padding-top: 2vh;
+	height: auto;
+	padding: 0;
+}*/
+
+/*.scl_About {
+	background: #fff;
+	position: relative;
+	margin-bottom: 0px;;
+}
+
+.scl_About:after {
+	content: '0';
+	font-size: 0;
+	background: #c4c4c4;
+	height: 1px;
+	width: 100%;
+}
+.scl_center{
+	background: url(../img/back.png) center center;
+	background-size: 100%;
+}*/

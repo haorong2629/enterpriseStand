@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="/static/js/jquery-1.8.3.min.js"></script>
+		<script src="/static/js/swiper-3.3.1.min.js"></script>
+		<script src="/static/js/index_banner.js"></script>
+		<link rel="stylesheet" href="/static/css/pub.css" />
+		<link rel="stylesheet" href="/static/css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="/static/css/index.css" />
+		<style type="text/css">
+			html,body{
+				margin:0;
+				padding:0;
+			}
+			.head{
+				width:100%;
+				position:absolute;
+				top:0;
+				z-index:10;
+			}
+			.head:hover{
+				background:white;
+				opacity:0.6;
+			}
+	        .head_logo{
+	        	float:left;
+	        	display:block;
+	        	margin-left:40px;
+	        }
+	        .head_a{        	
+	        	float:right;
+	        	line-height:149px;
+	        	margin-right:50px;
+	        	font-size:18px;
+	        	color:#282828;
+	        }
+	        .head_a:hover{color:#9d723d}
+	       	.swiper-button-next:hover,.swiper-button-prev:hover{
+	       		opacity:1;
+	       	}
+		</style>
+	</head>
+	<body>
+		<!--head-->
+		<div class="head">
+			<img class="head_logo" src="/static/img/logo_jpg.png" alt="" />
+			<a class="nav_Join head_a" href="/apidoc/joinus.html">Join us</a>
+			<a class="nav_About head_a" href="/apidoc/about.html">About</a>
+			<a class="nav_Works head_a" href="/apidoc/works.html">Works</a>
+			<a class="nav_Service head_a" href="/apidoc/service.html">Service</a>
+		</div>
+		
+		<div class="swiper-container Banner">
+			<div class="swiper-wrapper ban">
+				<div class="swiper-slide"><a href=""><img src="/static/img/about_phone.png" alt="" /></a></div>
+				<div class="swiper-slide"><a href=""><img src="/static/img/index_nav.jpg" alt="" /></a></div>
+				<div class="swiper-slide"><a href=""><img src="/static/img/about_er.png" alt="" /></a></div>
+				<div class="swiper-slide"><a href=""><img src="/static/img/about_phone.png" alt="" /></a></div>
+				<div class="swiper-slide"><a href=""><img src="/static/img/index_nav.jpg" alt="" /></a></div>
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		  	<div class="swiper-pagination"></div>
+		</div>
+	</body>
+</html>

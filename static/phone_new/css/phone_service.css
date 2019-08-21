@@ -1,0 +1,63 @@
+img{
+	display:inline-block;
+}
+.index_nav{
+	height:20.24rem
+}
+.div_title{
+	height:1.67rem;
+}
+.con .con_top{
+	padding-top:.10rem;
+	padding-bottom:1.28rem;
+	font-size:0rem;
+}
+.div_title{
+	padding:1.08rem 0 .48rem 0;
+}
+.div_title h2,.div_title h3{
+	font-size:.49rem;
+	color:#323232;
+	display: inline-block;
+	vertical-align: bottom;
+	line-height:1.67rem;
+}
+.div_title h2{
+	padding:0 .4rem 0 2.92rem;
+}
+.div_title h3{
+	padding-left:.4rem;
+}
+.div_title img{
+	height:1.67rem;
+}
+.service_img1{
+	display: inline-block;
+	width:2.80rem;
+	height:1.60rem;
+	background:url(../img/service1.jpg) no-repeat 0 0;
+	background-size:2.80rem 1.60rem;
+	margin:.20rem 0 0 .71rem;
+}
+.service_img2{
+	display: inline-block;
+	width:2.80rem;
+	height:1.60rem;
+	background:url(../img/service2.jpg) no-repeat 0 0;
+	background-size:2.80rem 1.60rem;
+	margin-left:.10rem;
+}
+.service_img3{
+	display: inline-block;
+	width:2.80rem;
+	height:1.60rem;
+	background:url(../img/service3.jpg) no-repeat 0 0;
+	background-size:2.80rem 1.60rem;
+	margin-left:.10rem;
+}
+.foot{
+	margin-top:0.3rem;
+}
+.con_top p{
+	font-size:.39rem;
+}

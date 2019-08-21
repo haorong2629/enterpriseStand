@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script src="/static/phone_new/js/jquery-1.8.3.min.js"></script>
+		<script src="/static/phone_new/js/index_rem.js"></script>
+		<script src="/static/phone_new/js/phone_about.js"></script>
+		<script src="/static/phone_new/js/phone_headdonghua.js"></script>
+		
+		<link rel="stylesheet" href="/static/phone_new/css/pub.css" />
+		<link rel="stylesheet" href="/static/phone_new/css/phone_about.css" />
+		<link rel="stylesheet" href="/static/phone_new/css/phone_joinus.css" />
+		<style type="text/css">
+			.head{
+				width:100%;
+				position: absolute;
+				border-bottom:1px solid rgb(195,195,195);
+				height:2rem;
+				z-index:10;
+				background:white;
+				text-align:right;
+				line-height:2rem;
+			}
+			.head:after{
+	                clear: both;
+	                content: "";
+	                width: 0;
+	                height: 0;
+	                display: block;
+	                visibility: hidden;
+	        }
+	        .head_logo{
+	        	float:left;
+	        	display:block;
+	        	margin-left:.4rem;
+	        	width:2.9rem;
+	        	height:2rem;
+				background:url(/static/phone_new/img/phone_index3.png) no-repeat;
+				background-size:2.9rem 2rem;
+				transition:all 0.8s ease-in-out;
+				-moz-transition:all 0.8s ease-in-out;
+				-webkit-transition:all 0.8s ease-in-out;
+				-o-transition:all 0.8s ease-in-out;
+	        }
+	       	.xiala{
+	       		/*float: right;*/
+	       		width:24px;
+	       		height:24px;
+	       		margin-right:.66rem;
+	       		background:url(/static/phone_new/img/phone_index2.png) no-repeat;
+	       		background-size:24px 24px;
+	       		display:inline-block;
+				transition:all 0.8s ease-in-out;
+				-moz-transition:all 0.8s ease-in-out;
+				-webkit-transition:all 0.8s ease-in-out;
+				-o-transition:all 0.8s ease-in-out;
+	       	}
+        
+	       	.xiala_a{
+	       		float:right;
+	       		width:100%;
+			overflow:hidden;
+			height:0;
+			padding-top:.4rem;
+	       	}
+	       	.xiala_a a{
+	       		float:right;
+	       		display:inline-block;
+	       		text-align: right;
+	       		width:10.3rem;
+	       		line-height:1.3rem;
+	       		font-size:.5rem;
+	       		color:#fafafa;
+	       	}
+			.scroll{
+	       		position:absolute;
+	       		opacity:0;
+	       		top:50px;
+	       	}
+			.footS{
+				float:left;
+			}
+	       	.move1 .scroll,.move3 .scroll,.move5 .scroll{
+	       		width:100%;
+	       	}
+	       	.move1{
+	       		height:5.74rem;
+	       		position:relative;
+	       	}
+	       	.move3{
+	       		height:5.27rem;
+	       		position:relative;
+	       	}
+	       	.move5{
+	       		height:5.52rem;
+	       		position:relative;
+	       	}
+	       	.move2,.move4,.move6{
+	       		position:relative;
+	       	}
+		</style>
+		<link rel="stylesheet" href="/static/phone_new/css/phone_donghua.css" />
+	</head>
+	<body>
+		<div class="head">
+			<a href="/">
+				<div class="head_logo"></div>
+			</a>
+			<div class="xiala"></div>
+			<div class="xiala_a">
+				<a class="nav_Join head_a" href="/">Home</a>
+				<a class="nav_Service head_a" href="/apidoc/service.html">Service</a>		
+				<a class="nav_Works head_a" href="/apidoc/works.html">Works</a>
+				<a class="nav_About head_a" href="/apidoc/about.html">About</a>
+				<a class="nav_Join head_a" href="/apidoc/joinus.html">Join us</a>
+			</div>
+		</div>
+		<div class="head_replaceF">
+			<div class="head_replace"></div>
+		</div>
+		<img class="index_nav" src="/static/phone_new/img/phone_joinusbg.jpg" alt="" />
+		<div class="con_parent">
+			<div class="con">
+				<div class="con_top">
+					<div class="move1">
+						<div class="scroll">
+							<h2>商务合作</h2>
+							<div class="joinus_img1"></div>
+						</div>
+					</div>
+					<div class="move2">
+						<p class="scroll">经过十年的不断发展，翰龙彬（北京）广告有限公司客户构成逐步形成以金融行业为主到覆盖全行业客户服务，期待与更多优质企业跨界合作。我们将通过专业服务为您的企业提供更有效的品牌营销方案，帮助您的企业提升价值。</p>
+					</div>
+					<div class="move3">
+						<div class="scroll">
+							<h2 style="padding:.9rem 0 .5rem">代理合作</h2>
+							<div class="joinus_img2"></div>
+						</div>
+					</div>
+					<div class="move4">
+						<p class="scroll">因公司业务规模不断发展扩大，我们期待与广告代理伙伴、互联网渠道代理伙伴、互联网技术开发伙伴等各类优质的伙伴形成紧密合作，共同提升核心竞争力，并以专业的能力及态度共同为客户创造更多价值。</p>
+					</div>
+					<div class="move5">
+						<div class="scroll">
+							<h2 style="padding:.9rem 0 .5rem">加入团队</h2>
+							<div class="joinus_img3"></div>
+						</div>
+					</div>
+					<div class="move6">
+						<p class="scroll">我们是一帮有理想、有态度、有追求的年轻人，核心成员均有4A广告公司背景，从事广告行业十几年。互联网营销团队成员来自于大型互联网公司，操盘过大型线上线下互联网营销案例，有丰富的品牌营销、互联网营销经验。欢迎同样有追求的小伙伴加入我们，一起为这个行业做出贡献，成就我们的精彩。</p>
+					</div>
+				</div>
+				
+				
+			</div>
+			<!--foot-->
+				<div class="foot">
+					<div class="footS">
+						<ul class="ourservice">
+							<li class="li_first">我们的服务<img src="/static/phone_new/img/phone_about1.png" alt="" /></li>
+							<li class="li"><a href="">品牌创意</a></li>
+							<li class="li"><a href="">数字营销</a></li>
+							<li class="li"><a href="">活动公关</a></li>
+							<li class="li"><a href="">创新文创</a></li>
+						</ul>
+					</div>
+					<div class="footS">
+						<ul class="ourworks">
+							<li class="li_first">我们的作品<img src="/static/phone_new/img/phone_about1.png" alt="" /></li>
+							<li class="li"><a href="">品牌创意</a></li>
+							<li class="li"><a href="">数字营销</a></li>
+							<li class="li"><a href="">活动公关</a></li>
+							<li class="li"><a href="">创新文创</a></li>
+						</ul>
+					</div>
+					<div class="footS">
+						<ul class="aboutus">
+							<li class="li_first">关于我们<img src="/static/phone_new/img/phone_about1.png" alt="" /></li>
+							<li class="li"><a href="">公司简介</a></li>
+							<li class="li"><a href="">公司理念</a></li>
+							<li class="li"><a href="">挂牌四板</a></li>
+							<li class="li"><a href="">服务客户</a></li>
+						</ul>
+					</div>
+					<div class="footS">
+						<ul class="joinus">
+							<li class="li_first">加入我们<img src="/static/phone_new/img/phone_about1.png" alt="" /></li>
+							<li class="li"><a href="">商务合作</a></li>
+							<li class="li"><a href="">代理合作</a></li>
+							<li class="li"><a href="">加入团队</a></li>
+						</ul>
+					</div>
+					<h6></h6>
+				</div>
+		</div>
+		<script src="/static/phone_new/js/joinus_scroll.js"></script>
+	</body>
+</html>

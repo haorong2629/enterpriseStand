@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/index_rem.js"></script>
+		<script src="js/swiper-3.3.1.min.js"></script>
+		<script src="js/index_banner.js"></script>
+		<link rel="stylesheet" href="css/pub.css" />
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="css/phone_index.css" />
+		<style type="text/css">
+			.head{
+				width:100%;
+				position:absolute;
+				z-index:3;
+				display:none;
+				height:2rem;
+			}
+			.head:after{
+	                clear: both;
+	                content: "";
+	                width: 0;
+	                height: 0;
+	                display: block;
+	                visibility: hidden;
+	        }
+	        .head_logo{
+	        	float:left;
+	        	display:block;
+	        	margin-left:.4rem;
+	        	width:2.9rem;
+	        	height:2rem;
+	        }
+	       	.xiala{
+	       		float: right;
+	       		width:.85rem;
+	       		height:.85rem;
+	       		margin:.64rem .66rem 0 0;
+	       		background:url(img/phone_index2.png) no-repeat;
+	       		background-size:.85rem .85rem;
+	       	}
+        
+	       	.xiala_a{
+	       		float:right;
+	       		width:100%;
+	       	}
+	       	.xiala_a a{
+	       		float:right;
+	       		display:inline-block;
+	       		text-align: right;
+	       		width:100%;
+	       		line-height:1.3rem;
+	       		font-size:.48rem;
+	       		color:#fafafa;
+	       	}
+	       	
+	       	
+		</style>
+	</head>
+	<body>
+		<!--head-->
+		
+		<div class="head">
+			<img class="head_logo" src="img/phone_index1.png" alt="" />
+			<div class="xiala"></div>
+			<div class="xiala_a">
+				<a class="nav_Join head_a" href="#">Join us</a>
+				<a class="nav_About head_a" href="#">About</a>
+				<a class="nav_Works head_a" href="#">Works</a>
+				<a class="nav_Service head_a" href="#">Service</a>
+				<div class="xiala_replace"></div>
+			</div>
+		</div>
+		<!--轮播图-->
+		<div class="swiper-container Banner" >
+			<div class="swiper-wrapper ban" >
+			    <div class="swiper-slide"><a href=""><img src="img/phone_index01.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="img/phone_index02.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="img/phone_index03.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="img/phone_index04.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="img/phone_index05.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="img/phone_index06.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="img/phone_index07.jpg" alt="" /></a></div>
+			    <div class="swiper-slide"><a href=""><img src="img/phone_index08.jpg" alt="" /></a></div>
+
+
+                                           </div>
+		  	<div class="swiper-pagination"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+﻿html,body{
+	overflow:auto;
+}
+.work_con{
+	overflow-y:scroll;
+background:black;
+}
+.foot{
+	padding-left:0;
+	margin-left:0;
+}
+button{
+	border:none;
+	cursor:pointer;
+}
+.work_nav{
+	line-height:1.16rem;
+	font-size:.47rem;
+	color:#282828;
+	background:white;
+	position:absolute;
+	top:2rem;
+	width:100%;
+}
+.work_nav_scroll{
+	width:100%;
+	opacity:0.5;
+}
+.work_nav i{
+	padding-right:.62rem;
+	font-weight: 400;
+}
+.work_img{
+	width:100%;
+	border-top:1px solid #323232;
+	border-bottom:1px solid #323232;
+	overflow:hidden;
+}
+.work_img li,.work_video li{
+	width:100%;
+	height:3.8rem;
+	float:left;
+	overflow:hidden;
+}
+.work_img .img{
+	width:100%;
+	height:100%;
+}
+.work_li{
+	border-right:1px solid #323232;
+	border-bottom:1px solid #323232;
+}
+
+
+/*蒙版*/
+.meng{
+	height:100%;
+	position:fixed;
+	z-index:11;
+	background:rgb(200,200,200);
+	top:0;
+	left:0;
+	display:none;
+}
+.meng_con{
+	position:absolute;
+	width:9rem;
+	height:11.14rem;
+	background:;
+	left:50%;
+	top:50%;
+	margin-top:-5rem;
+	margin-left:-4.50rem;
+}
+.img_div{
+	width:9.00rem;
+	height:9.00rem;
+	background:white;
+	
+}
+.img_div img{
+	float:left;
+}
+.smallimg{
+	width:9.34rem;
+	height:2.00rem;
+	margin-top:.33rem;
+	overflow:hidden;
+}
+.smallimg img{
+	width:2.00rem;
+	height:2.00rem;
+	float:left;
+	margin-right:.33rem;
+	background:red;
+	opacity: 0.5;
+}
+.meng_left{
+	position:absolute;
+	left:.3rem;
+	top:7.42rem;
+	width:.41rem;
+	height:.80rem;
+	background: url(../img/work_left.png) no-repeat 0 0;
+	background-size:.41rem .80rem;
+	opacity:0.3;
+}
+.meng_right{
+	position:absolute;
+	left:10.1rem;
+	top:7.42rem;
+	width:.41rem;
+	height:.80rem;
+	background: url(../img/work_right.png)  no-repeat 0 0;
+	background-size: .41rem .80rem;;
+	opacity:0.3;
+}
+.meng_right:hover,.meng_left:hover{
+	opacity:0.9;
+}
+.shutdown{
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:4rem;
+	margin-top:-6.5rem;
+	width:.85rem;
+	height:.88rem;
+	background: url(../img/work_shutdown.png) no-repeat 0 0;
+	background-size:.56rem .56rem;
+}
+.xuanzhong {
+	opacity: 1;
+}
+
+
+.foot{
+	width:100%;
+	padding:0.24rem 0 1.48rem;
+	margin:0;
+	background:white;
+	box-shadow: none;
+}
+.foot ul{
+	width:9.72rem;
+	margin:0 .52rem 0 .56rem;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script src="/static/phone_new/js/jquery-1.8.3.min.js"></script>
+		<script src="/static/phone_new/js/swiper-3.3.1.min.js"></script>
+		<script src="/static/phone_new/js/index_rem.js"></script>
+		<script src="/static/phone_new/js/phone_about.js"></script>
+		<!--<script src="/static/phone_new/js/phone_work.js"></script>此文件是詳情頁更改為swiper之前-->
+		<script src="/static/phone_new/js/phone_works.js"></script>
+		<script src="/static/phone_new/js/phone_headdonghua.js"></script>
+		<link rel="stylesheet" href="/static/phone_new/css/pub.css" />
+		<link rel="stylesheet" href="/static/phone_new/css/phone_about.css" />
+		<link rel="stylesheet" href="/static/phone_new/css/phone_work.css" />
+		<link rel="stylesheet" href="/static/phone_new/css/swiper-3.3.1.min.css" />
+		<style type="text/css">
+			html{
+				overflow:hidden;
+				height:100%;
+			}
+			body{
+				height:100%;
+				overflow:hidden;
+			}
+			.head{
+				width:100%;
+				position: fixed;
+				border-bottom:1px solid #373131;
+				height:2rem;
+				z-index:10;
+				background:white;
+				text-align:right;
+				line-height:2rem;
+			}
+			.head:after{
+	                clear: both;
+	                content: "";
+	                width: 0;
+	                height: 0;
+	                display: block;
+	                visibility: hidden;
+	        }
+	        .head_logo{
+	        	float:left;
+	        	display:block;
+	        	margin-left:.4rem;
+	        	width:2.9rem;
+	        	height:2rem;
+				background:url(/static/phone_new/img/phone_index3.png) no-repeat;
+				background-size:2.9rem 2rem;
+				transition:all 0.8s ease-in-out;
+				-moz-transition:all 0.8s ease-in-out;
+				-webkit-transition:all 0.8s ease-in-out;
+				-o-transition:all 0.8s ease-in-out;
+	        }
+	       	.xiala{
+	       		/*float: right;*/
+	       		width:24px;
+	       		height:24px;
+	       		margin-right:.66rem;
+	       		background:url(/static/phone_new/img/phone_index2.png) no-repeat;
+	       		background-size:24px 24px;
+	       		display:inline-block;
+				transition:all 0.8s ease-in-out;
+				-moz-transition:all 0.8s ease-in-out;
+				-webkit-transition:all 0.8s ease-in-out;
+				-o-transition:all 0.8s ease-in-out;
+	       	}
+        
+	       	.xiala_a{
+	       		float:right;
+	       		width:100%;
+			overflow:hidden;
+			height:0;
+			padding-top:.4rem;
+	       	}
+	       	.xiala_a a{
+	       		float:right;
+	       		display:inline-block;
+	       		text-align: right;
+	       		width:10.3rem;
+	       		line-height:1.3rem;
+	       		font-size:.5rem;
+	       		color:#fafafa;
+	       	}
+			.work_img .img{
+	       		/*margin-top:50px;*/
+	       	}.work_img,.work_video {
+				float: left;
+			}
+			
+			.imgTab ul {
+				display: none;
+			}
+			
+			.imgTab ul:first-child {
+				display: block;
+			}
+			
+			
+			audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel{
+				height:20px;
+			}
+			audio::-webkit-media-controls-enclosure, video::-webkit-media-controls-enclosure{
+				height:20px;
+			}
+			
+			.mengSwiper{
+				position:fixed;
+				z-index:100;
+				width:100%;
+				height:100%;
+				display:none;
+			}
+			.swiper-slide{
+				width:100%;
+				height:100%;	
+			}
+			.none{
+				opacity:0;
+			}
+			.swiper-slide img{
+				float:left;
+			}
+		</style>
+		<link rel="stylesheet" href="/static/phone_new/css/phone_donghua.css" />
+	</head>
+	<body>
+		<div class="Body" style="overflow:scroll;width:100%;height:100%;">
+		<!--蒙版-->
+		<!--<div class="meng" style="display:none;">
+			<button class="meng_left"></button>
+			<button class="meng_right"></button>
+			<button class="shutdown"></button>
+			<div class="meng_con">
+				<div class="img_div">
+					<img src="" alt="" />
+				</div>
+				
+				<div class="smallimg">
+				</div>
+			</div>
+		</div>-->
+		<div class="swiper-container mengSwiper" >
+			<div class="swiper-wrapper ban" ></div>
+		</div>
+		
+		<div class="head">
+			<a href="/">
+				<div class="head_logo"></div>
+			</a>
+			<div class="xiala"></div>
+			<div class="xiala_a">
+				<a class="nav_Join head_a" href="/">Home</a>
+				<a class="nav_Service head_a" href="/apidoc/service.html">Service</a>		
+				<a class="nav_Works head_a" href="/apidoc/works.html">Works</a>
+				<a class="nav_About head_a" href="/apidoc/about.html">About</a>
+				<a class="nav_Join head_a" href="/apidoc/joinus.html">Join us</a>
+			</div>
+		</div>
+		<div class="head_replaceF">
+			<div class="head_replace"></div>
+		</div>
+		<div style="height:2rem;"></div>
+		<div class="work_nav">
+			<i style="padding-left:.96rem">Bc</i>
+			<i>Pr</i>
+			<i>Dm</i>
+			<i>Inno</i>
+			<i style="padding-right:0;">Video</i>.......
+			<i style="font-weight:600;">All</i>
+		</div>
+		<div style="height:1.16rem;"></div>
+		<div class="work_con">
+		<!--img-->
+			<div class="imgTab" style="overflow:hidden;">
+				<ul class="work_img">
+					
+				</ul>
+				<ul class="work_img">
+					
+				</ul>
+				<ul class="work_img">
+					
+				</ul>
+				<ul class="work_img">
+					
+				</ul>
+				<ul class="work_video">
+					
+				</ul>
+				<ul class="work_img">
+				</ul>
+			</div>
+		
+		<!--foot-->
+				<div class="foot">
+					<div class="footS">
+						<ul class="ourservice">
+							<li class="li_first">我们的服务<img src="/static/phone_new/img/phone_about1.png" alt="" /></li>
+							<li class="li"><a href="">品牌创意</a></li>
+							<li class="li"><a href="">数字营销</a></li>
+							<li class="li"><a href="">活动公关</a></li>
+							<li class="li"><a href="">创新文创</a></li>
+						</ul>
+					</div>
+					<div class="footS">
+						<ul class="ourworks">
+							<li class="li_first">我们的作品<img src="/static/phone_new/img/phone_about1.png" alt="" /></li>
+							<li class="li"><a href="">品牌创意</a></li>
+							<li class="li"><a href="">数字营销</a></li>
+							<li class="li"><a href="">活动公关</a></li>
+							<li class="li"><a href="">创新文创</a></li>
+						</ul>
+					</div>
+					<div class="footS">
+						<ul class="aboutus">
+							<li class="li_first">关于我们<img src="/static/phone_new/img/phone_about1.png" alt="" /></li>
+							<li class="li"><a href="">公司简介</a></li>
+							<li class="li"><a href="">公司理念</a></li>
+							<li class="li"><a href="">挂牌四板</a></li>
+							<li class="li"><a href="">服务客户</a></li>
+						</ul>
+					</div>
+					<div class="footS">
+						<ul class="joinus">
+							<li class="li_first">加入我们<img src="/static/phone_new/img/phone_about1.png" alt="" /></li>
+							<li class="li"><a href="">商务合作</a></li>
+							<li class="li"><a href="">代理合作</a></li>
+							<li class="li"><a href="">加入团队</a></li>
+						</ul>
+					</div>
+					<h6></h6>
+				</div>
+		</div>
+		</div>
+	</body>
+	
+</html>

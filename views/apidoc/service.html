@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="/static/js/jquery-1.8.3.min.js"></script>
+		<script src="/static/js/head_pub.js"></script>
+		<script src="/static/js/service.js"></script>
+		<script src="/static/js/scroll.js"></script>
+		<script src="/static/js/jump.js"></script>
+		<link rel="stylesheet" href="/static/css/pub.css" />
+		<link rel="stylesheet" href="/static/css/about.css" />
+		<link rel="stylesheet" href="/static/css/service.css" />
+		<style type="text/css">
+			.head{
+				display:none;
+				min-width:1000px;
+				border-bottom:1px solid rgb(195,195,195);
+				position:absolute;
+				top:0;
+				z-index:10;
+				background:white;
+				opacity:1;
+			}
+			.head:after{
+	                clear: both;
+	                content: "";
+	                width: 0;
+	                height: 0;
+	                display: block;
+	                visibility: hidden;
+	        }
+	        .head_logo{
+	        	float:left;
+	        	display:block;
+	        	margin-left:40px;
+	        }
+	        .head_a{        	
+	        	float:right;
+	        	line-height:149px;
+	        	margin-right:50px;
+	        	font-size:18px;
+	        	font-family:Arial;
+	        }
+	        .head_a:hover{color:#9d723d}
+			.nav-title{
+				display:none;
+			}
+        
+		</style>
+	</head>
+	<body>
+		<!--蒙版-->
+		<div class="meng" style="display:none; z-index:100;">
+			<button class="meng_left"></button>
+			<button class="meng_right"></button>
+			<button class="shutdown"></button>
+			<div class="meng_con">
+				<div class="img_div">
+					<img src="" alt="" />
+				</div>
+				
+				<div class="smallimg">
+					<!--<img class="xuanzhong" src="" alt="" />
+					<img src="" alt="" />
+					<img src="" alt="" />-->
+				</div>
+			</div>
+		</div>
+		
+		<div class="head">
+			<a href="/"><img class="head_logo" src="/static/img/logo_jpg.png" alt="" /></a>
+			<a class="nav_Join head_a" href="/apidoc/joinus.html">Join us</a>
+			<a class="nav_About head_a" href="/apidoc/about.html">About</a>
+			<a class="nav_Works head_a" href="/apidoc/works.html">Works</a>
+			<a class="nav_Service head_a" href="/apidoc/service.html" style="color:#9d723d">Service</a>
+		</div>
+		
+		<img class="index_nav" src="/static/img/phone_index04.jpg" alt="" />
+		<div class="con_parent">
+			<div class="con">
+				<div class="con_top">
+					<div class="move1">
+						<div class="div_title scroll">
+							<h2>品牌</h2>
+							<img src="/static/img/service_gif1.gif" alt="" />
+							<h3>创意</h3>
+						</div>
+					</div>
+					<div class="move2">
+						<p class="scroll">我们以丰富的品牌营销经验为客户提供整体营销策略，通过广告创意在短期内为客户创造市场销量，长期打造品牌价值。</p>
+					</div>
+					<div class="move3">
+						<div class="img_click pinpai scroll">
+							<!-- <img class="service_img1" src="/static/img/service1.jpg" alt="" />
+							<img class="service_img2" src="/static/img/service2.jpg" alt="" />
+							<img class="service_img3" src="/static/img/service3.jpg" alt="" /> -->
+							<!--{{range $k, $v := .ppcy}}
+								<img class="service_img3" src="{{.content}}" alt="" />
+							{{end}}-->
+						</div>
+					</div>
+					<div class="move4">
+						<div class="div_title scroll">
+							<h2>数字</h2>
+							<img src="/static/img/service_gif2.gif" alt="" />
+							<h3>营销</h3>
+						</div>
+					</div>
+					<div class="move5">
+						<p class="scroll">我们有一支专业的互联网营销团队，基于互联网平台及用户特性为客户量身定制社会化营销服务。通过品牌、内容、热点、渠道营销，实现品牌与用户之间的沟通及互动，最大化提升品牌传播度。</p>
+					</div>
+					<div class="move6">
+						<div class="img_click shuzi scroll">
+							<!-- <img class="service_img1" src="/static/img/service1.jpg" alt="" />
+							<img class="service_img2" src="/static/img/service2.jpg" alt="" />
+							<img class="service_img3" src="/static/img/service3.jpg" alt="" /> -->
+							<!--{{range $k, $v := .szyx}}
+								<img class="service_img3" src="{{.content}}" alt="" />
+							{{end}}-->
+						</div>
+					</div>
+					<div class="move7">
+						<div class="div_title scroll">
+							<h2>活动</h2>
+							<img src="/static/img/service_gif3.gif" alt="" />
+							<h3>公关</h3>
+						</div>
+					</div>
+					<div class="move8">
+						<p class="scroll">我们拥有大型活动策划与执行经验，致力于为客户提供专业的活动策划执行全方位服务，持续提升客户价值。</p>
+					</div>
+					<div class="move9">
+						<div class="img_click huodong scroll">
+							<!-- <img class="service_img1" src="/static/img/service1.jpg" alt="" />
+							<img class="service_img2" src="/static/img/service2.jpg" alt="" />
+							<img class="service_img3" src="/static/img/service3.jpg" alt="" /> -->
+							<!--{{range $k, $v := .hdgg}}
+								<img class="service_img3" src="{{.content}}" alt="" />
+							{{end}}-->
+						</div>
+					</div>
+					<div class="move10">
+						<div class="div_title scroll">
+							<h2>创新</h2>
+							<img src="/static/img/service_gif4.gif" alt="" />
+							<h3>文创</h3>
+						</div>
+					</div>
+					<div class="move11">
+						<p class="scroll">依托强大的品牌营销经验，我们有效实现了品牌营销与各行业的跨界融合，以整体品牌营销思维服务文创类客户，为文创企业打造具有文化特质的品牌形象，助推品牌与产品的创新发展。</p>
+					</div>
+					<div class="move12">
+						<div class="img_click chuangxin scroll">
+							<!-- <img class="service_img1" src="/static/img/service1.jpg" alt="" />
+							<img class="service_img2" src="/static/img/service2.jpg" alt="" />
+							<img class="service_img3" src="/static/img/service3.jpg" alt="" /> -->
+							<!--{{range $k, $v := .cxwc}}
+								<img class="service_img3" src="{{.content}}" alt="" />
+							{{end}}-->
+						</div>
+					</div>
+				</div>
+				
+				<!--foot-->
+				<div class="foot">
+					<ul class="ourservice">
+						<li class="li_first">我们的服务</li>
+						<li class="li"><a href="">品牌创意</a></li>
+						<li class="li"><a href="">数字营销</a></li>
+						<li class="li"><a href="">活动公关</a></li>
+						<li class="li"><a href="">创新文创</a></li>
+					</ul>
+					<ul class="ourworks">
+						<li class="li_first">我们的作品</li>
+						<li class="li"><a href="">品牌创意</a></li>
+						<li class="li"><a href="">数字营销</a></li>
+						<li class="li"><a href="">活动公关</a></li>
+						<li class="li"><a href="">创新文创</a></li>
+					</ul>
+					<ul class="aboutus">
+						<li class="li_first">关于我们</li>
+						<li class="li"><a href="">公司简介</a></li>
+						<li class="li"><a href="">公司理念</a></li>
+						<li class="li"><a href="">挂牌四板</a></li>
+						<li class="li"><a href="">服务客户</a></li>
+					</ul>
+					<ul class="joinus">
+						<li class="li_first">加入我们</li>
+						<li class="li"><a href="">商务合作</a></li>
+						<li class="li"><a href="">代理合作</a></li>
+						<li class="li"><a href="">加入团队</a></li>
+					</ul>
+					<h6></h6>
+				</div>
+			</div>
+			
+			
+		</div>
+	</body>
+	<script>
+		$(function(){
+//			alert(0);
+			function getScrollbarWidth() {
+				
+			    var odiv = document.createElement('div'),//创建一个div
+			        styles = {
+			            width: '100px',
+			            height: '100px',
+			            overflowY: 'scroll'//让他有滚动条
+			        }, i, scrollbarWidth;
+			    for (i in styles) odiv.style[i] = styles[i];
+			    document.body.appendChild(odiv);//把div添加到body中
+			    scrollbarWidth = odiv.offsetWidth - odiv.clientWidth;//相减
+			    
+			    odiv.remove();//移除创建的div
+			    
+			    return scrollbarWidth;//返回滚动条宽度
+			    
+			}
+			var windowW=$(window).width();
+			var scrollW=getScrollbarWidth();
+			$(".head").css("display","block");
+			$(".head").width(windowW-scrollW);
+		})
+	</script>
+</html>

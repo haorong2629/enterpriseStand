@@ -1,0 +1,71 @@
+.con_top{
+	padding-top:9px;
+}
+.con_top h2{
+	font-size:30px;
+	color:black;
+	font-family:'思源黑体 CN';
+	text-align: center;
+	line-height:30px;
+	padding:90px 0px 50px;
+	width:100%;
+}
+.con .con_top{
+	padding-bottom:183px;
+}
+.joinus_img1{
+	width:100%;
+	height:314px;
+	background:url(../img/joinus1.png) no-repeat 334px 0px;
+}
+.joinus_img2{
+	width:100%;
+	height:282px;
+	background:url(../img/joinus2.png) no-repeat 277px 0px;
+}
+.joinus_img3{
+	width:100%;
+	height:295px;
+	background:url(../img/joinus3.png) no-repeat 279px 0px;
+}
+			.scroll{
+        		opacity:0;
+        		position:absolute;
+        		top:200px;
+        	}
+        	.move1{
+        		height:170px;
+        		position:relative;
+        	}
+        	.move2{
+        		height:314px;
+        		position:relative;
+        	}
+        	.move3{
+        		height:120px;
+        		position:relative;
+        	}
+        	.move4{
+        		height:170px;
+        		position:relative;
+        	}
+        	.move5{
+        		height:282px;
+        		position:relative;
+        	}
+        	.move6{
+        		height:120px;
+        		position:relative;
+        	}
+        	.move7{
+        		height:170px;
+        		position:relative;
+        	}
+        	.move8{
+        		height:295px;
+        		position:relative;
+        	}
+        	.move9{
+        		height:160px;
+        		position:relative;
+        	}

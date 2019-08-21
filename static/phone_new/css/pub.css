@@ -1,0 +1,54 @@
+@charset "utf-8";
+html,body{height:100%;overflow:hidden;color:#282828;-webkit-user-select:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;-webkit-user-select:none;-webkit-touch-callout:none;-webkit-touch-callout:none;margin:0;padding:0;background:white;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,span,i,em,strong{margin:0;padding:0;}
+body,button,input,select,textarea {font-family:"思源黑体 CN","Microsoft YaHei",Arial,Helvetica,sans-serif,"微软雅黑";}
+html, body, form, fieldset, p, div, span, i , em, h1, h2, h3, h4, h5, h6 {-webkit-text-size-adjust:none;padding:0;margin:0;font-style:normal;font-weight:normal;}/*阻止旋转屏幕时自动调整字体大小*/
+textarea{resize:none;}
+a{color:#282828}
+/*取消按钮在inphone上的默认样式*/
+img{
+	border:none;
+}
+body{
+	display:none;
+}
+input[type=button]{-webkit-appearance:none !important;outline:none !important;}
+input::-webkit-input-placeholder{color:#F0F0F0;}
+textarea::-webkit-input-placeholder{color:#F0F0F0;}
+input::-webkit-input-speech-button {display:none}
+table {border-collapse:collapse;border-spacing:0;}
+th {text-align:inherit;}
+fieldset,img {border:none;}
+abbr,acronym {border:none;font-variant:normal;}
+del {text-decoration:line-through;}
+ol,ul,li {list-style:none;}
+caption,th {text-align:left;}
+sub,sup {font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup {top:-0.5em;}
+sub {bottom:-0.25em;}
+ins,a,a:hover {text-decoration:none;}
+a:focus,*:focus {outline:none;}
+.clearfix:before,.clearfix:after {content:"";display:table;}
+.clearfix:after {clear:both;overflow:hidden;}
+.clearfix {zoom:1;}
+.clear {clear:both;display:block;font-size:0;height:0;line-height:0;overflow:hidden;}
+.outL{white-space:normal;word-break:break-all;width:100px;}
+.outH{overflow:hidden;text-overflow:ellipsis;white-space:nowrap; width:100px;}
+/*布局*/
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.ma{margin:0 auto;display:block;}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:rigth;}
+.rel{position:relative;}
+.abs{position:absolute;}
+.tac{text-align:center;}
+.tal{text-align:left;}
+.tar{text-align:right;}
+.dib{display:inline-block;}
+.db {display:block;}
+.dn {display:none;}
+.vab{vertical-align:bottom;}
+.vam{vertical-align:middle;}
+.vat{vertical-align:top;}

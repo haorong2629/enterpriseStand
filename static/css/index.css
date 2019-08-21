@@ -1,0 +1,105 @@
+html,body{
+	height: 100%;
+	min-width: 1080px;
+	min-height:607px;
+	overflow-x: auto;
+}
+body{
+	display:none;
+}
+.Banner {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.ban {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.swiper-slide a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide a img {
+	width: 100%;
+	height: 100%;
+}
+
+.caozuo {
+	width: 100%;
+	padding: 0;
+	height: .3rem;
+	position: absolute;
+	z-index: 2;
+	bottom: .56rem;
+}
+
+.caozuo_li {
+	width: .30rem;
+	height: .30rem;
+	margin: 0 .05rem;
+	line-height: .30rem;
+	text-align: center;
+	color: #646464;
+	background: #9e9b98;
+	border-radius: 50%;
+	font-size: 28px;
+	float: left;
+	cursor: pointer;
+}
+
+.left {
+	width: .70rem;
+	height: .75rem;
+	position: absolute;
+	left: .50rem;
+	background: url(../img/index_left.png) no-repeat 100% 100%;
+	top: 50%;
+	margin-top: -.25rem;
+	cursor: pointer;
+}
+
+.right {
+	width: .7rem;
+	height: .75rem;
+	position: absolute;
+	right: .50rem;
+	background: url(../img/index_right.png) no-repeat 100% 100%;
+	top: 50%;
+	margin-top: -.25rem;
+	cursor: pointer;
+}
+
+.swiper-button-prev {
+	width: 58px;
+	height: 65px;
+	position: absolute;
+	top: 50%;
+	margin-top: -38px;
+	left: .5rem;
+	background: url(../img/work_left.png) no-repeat;
+	background-size: 58px 65px;
+	z-index: 5;
+	opacity: 0.6;
+}
+
+.swiper-button-next {
+	width: 58px;
+	height: 65px;
+	position: absolute;
+	top: 50%;
+	margin-top: -38px;
+	right: .5rem;
+	background: url(../img/work_right.png) no-repeat;
+	background-size: 58px 65px;
+	z-index: 5;
+	opacity: 0.6;
+}
